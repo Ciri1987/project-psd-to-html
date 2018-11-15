@@ -6,17 +6,14 @@
   "scripts": {
     "test": "npm run test:html",
     "test:html": "globstar nu-html-checker *.html",
-
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-
     "build": "npm-run-all build:* test",
     "build:clean": "rimraf css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-
     "watch": "npm-run-all -p watch:*",
     "watch:sassprefixer-sass": "node-sass sass/style.scss css/style.css",
     "watch:sassprefixer-autoprefixer": "autoprefixer-cli css/style.css",
