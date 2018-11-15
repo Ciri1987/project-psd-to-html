@@ -1,0 +1,39 @@
+{
+  "name": "projekt-indywidualny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:html",
+    "test:html": "globstar nu-html-checker *.html",
+
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+
+    "build": "npm-run-all build:* test",
+    "build:clean": "rimraf css",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+
+    "watch": "npm-run-all -p watch:*",
+    "watch:sassprefixer-sass": "node-sass sass/style.scss css/style.css",
+    "watch:sassprefixer-autoprefixer": "autoprefixer-cli css/style.css",
+    "watch:sassprefixer": "onchange sass -- npm-run-all watch:sassprefixer-sass watch:sassprefixer-autoprefixer",
+    "watch:browsersync": "browser-sync start --server --files css/style.css"
+  },
+  "keywords": [],
+  "author": "Anna Strzała",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.26.3",
+    "globstar": "^1.0.0",
+    "nu-html-checker": "^0.1.0"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.3"
+  }
+}
