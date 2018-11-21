@@ -1,6 +1,7 @@
 /*COLORS*/
 /*FONTS*/
 /*FONTS SIZE*/
+/*BUTTONS*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -511,7 +512,7 @@ body {
   color: #A6A6A6;
   text-decoration: none;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   padding: 25px;
 }
 
@@ -528,6 +529,11 @@ body {
   font-weight: lighter;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contact-manager img {
+  border-radius: 50%;
+  float: left;
 }
 
 header {
