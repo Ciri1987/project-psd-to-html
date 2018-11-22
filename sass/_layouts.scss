@@ -157,12 +157,14 @@ body {
     z-index: 1;
 
     img {
-        padding: 10px;
+        padding: 20px;
         text-align: center;
+
+
     }
 
     ul {
-        padding: 0;
+        padding: 10px;
         margin: 0;
 
         li {
@@ -171,6 +173,8 @@ body {
 
             &:last-of-type {
                 border-bottom: 2px solid $sidebar-hover-color;
+                padding: 0;
+                margin: 0;
             }
 
             a {
@@ -178,7 +182,7 @@ body {
                 text-decoration: none;
                 display: block;
                 font-size: $sidebar-font-size;
-                padding: 25px;
+                padding: 18px;
 
                 &:hover {
                     background-color: $sidebar-hover-color;
@@ -186,32 +190,46 @@ body {
                     border-left: 5px solid $orange-color;
                 }
             }
+
+            span {
+                margin-right: 13px;
+
+            }
         }
     }
 }
 
-.icon {
-    display: inline-flex;
-    padding: 10px 20px 10px 20px;
-
-}
+/*contact manager */
 
 .contact-manager {
-    margin-left: 20px;
     color: $main-font-color;
     padding-top: 30px;
+    padding-left: 20px;
     font-weight: lighter;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: left;
 
-    img {
-        border-radius: 50%;
+    h2 {
+        font-size: 17px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
 
     }
 }
 
 .manager {
     display: flex;
+
+    img {
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 13px;
+        justify-content: space-between;
+        color: $turquise-color;
+        font-weight: lighter;
+        padding-top: 25px;
+    }
 }
 
 /* header*/
@@ -293,7 +311,7 @@ header {
             .name {
                 display: inline-flex;
                 padding: 25px 20px 25px 0;
-                color: #56819f;
+                color: $turquise-color;
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 42px;
@@ -315,4 +333,25 @@ header {
             }
         }
     }
+}
+
+.main-head {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 300px;
+
+    h1 {
+        color: #979797;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid #d2d0d0;
+
+
+    }
+
+
 }
