@@ -605,6 +605,10 @@ header ul li .wallet {
   color: #9c9c9c;
 }
 
+header ul li .wallet:hover {
+  color: #F58220;
+}
+
 header ul li .sum {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -622,6 +626,10 @@ header ul li .arrow {
   display: inline-flex;
   padding: 30px 16px 26px 20px;
   color: #9c9c9c;
+}
+
+header ul li .arrow:hover {
+  color: #F58220;
 }
 
 header ul li .notif {
@@ -655,6 +663,10 @@ header ul li .login {
   color: #9c9c9c;
 }
 
+header ul li .login:hover {
+  color: #F58220;
+}
+
 header ul li .name {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -663,6 +675,10 @@ header ul li .name {
   font-size: 14px;
   font-weight: 300;
   line-height: 42px;
+}
+
+header ul li .name:hover {
+  color: blue;
 }
 
 header ul li .logout {
@@ -676,26 +692,34 @@ header ul li .logout {
       justify-content: center;
 }
 
+header ul li .logout:hover {
+  color: #F58220;
+}
+
 header ul li a {
   width: 100%;
   text-decoration: none;
 }
 
-.main-head {
-  display: -ms-flexbox;
-  display: flex;
+.container {
+  position: absolute;
   width: 100%;
   height: 800px;
   background-color: #fff;
   margin-top: 20px;
-  padding-right: 40px;
-  padding-left: 300px;
+  margin-left: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-head h1 {
+.container .general-statistic {
+  display: block;
+}
+
+.container .main-head {
   color: #979797;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 10px;
+  padding: 8px;
   border-bottom: 1px solid #d2d0d0;
 }
 /*# sourceMappingURL=style.css.map */
