@@ -159,8 +159,6 @@ body {
     img {
         padding: 20px;
         text-align: center;
-
-
     }
 
     ul {
@@ -254,7 +252,7 @@ header {
 
         li {
             display: flex;
-            border-left: solid 2px #e3e3e3;
+            border-left: $border-main;
             width: auto;
 
             .wallet {
@@ -375,6 +373,63 @@ header {
         text-transform: uppercase;
         font-size: 10px;
         padding: 8px;
-        border-bottom: 1px solid #d2d0d0;
+        border-bottom: $border-main;
+    }
+
+    .input {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        border: 0;
+        border-bottom: $border-main;
+        padding-bottom: 40px;
+
+        .input-one {
+
+            border: $border-main;
+        }
+
+        .input-second {
+            border: $border-main;
+
+            .icon-calendar {
+                color: $main-font-color;
+                padding: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $orange-color;
+            border-radius: 6px;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            cursor: pointer;
+            margin-left: 20px;
+            font-weight: 100;
+
+
+            .icon-refresh {
+
+                color: #fff;
+                text-decoration: none;
+
+            }
+
+
+        }
+
+    }
+
+    .links {
+        color: #979797;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 8px;
+        border-bottom: $border-main;
     }
 }
