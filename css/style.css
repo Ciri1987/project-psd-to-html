@@ -777,4 +777,24 @@ header ul li a {
   padding: 8px;
   border-bottom: solid 2px #e3e3e3;
 }
+
+.container .links button {
+  height: 50px;
+  width: 120px;
+  background-color: #F58220;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.container .links .add-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 30px;
+}
 /*# sourceMappingURL=style.css.map */
