@@ -779,7 +779,7 @@ header ul li a {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.container .links .row {
+.container .links .row-link {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -790,11 +790,11 @@ header ul li a {
   margin-right: 280px;
 }
 
-.container .links .row:hover {
+.container .links .row-link:hover {
   background-color: #e3e3e3;
 }
 
-.container .links .row a {
+.container .links .row-link a {
   text-decoration: none;
   color: #808080;
   text-transform: lowercase;

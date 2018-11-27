@@ -431,7 +431,7 @@ header {
 
 
 
-        .row {
+        .row-link {
             display: flex;
             justify-content: space-around;
             border-bottom: $border-main;
@@ -443,14 +443,14 @@ header {
                 background-color: #e3e3e3;
             }
 
-            h2 {}
-
             a {
                 text-decoration: none;
                 color: $main-font-color;
                 text-transform: lowercase;
             }
         }
+
+
 
         button {
 
