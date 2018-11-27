@@ -704,7 +704,7 @@ header ul li a {
 .container {
   position: relative;
   max-width: 100%;
-  height: 800px;
+  height: 100%;
   background-color: #fff;
   margin-top: 20px;
   margin-left: 290px;
@@ -779,11 +779,25 @@ header ul li a {
   border-bottom: solid 2px #e3e3e3;
 }
 
-.container .links div {
+.container .links .row {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: solid 2px #e3e3e3;
+  padding: 20px;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.container .links .row:hover {
+  background-color: #e3e3e3;
+}
+
+.container .links .row a {
+  text-decoration: none;
+  color: #808080;
+  text-transform: lowercase;
 }
 
 .container .links button {
