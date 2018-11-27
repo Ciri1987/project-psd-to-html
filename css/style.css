@@ -771,6 +771,14 @@ header ul li a {
   text-decoration: none;
 }
 
+.container .graphic {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 30px;
+}
+
 .container .links {
   color: #979797;
   text-transform: uppercase;
