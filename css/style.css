@@ -494,13 +494,12 @@ body {
   z-index: 999;
 }
 
-.sidebar img {
-  padding: 20px;
-  text-align: center;
+.sidebar .main-logo {
+  margin: 0;
+  padding: 30px;
 }
 
 .sidebar ul {
-  padding: 10px;
   margin: 0;
 }
 
@@ -520,6 +519,7 @@ body {
   text-decoration: none;
   display: block;
   font-size: 20px;
+  border-left: 5px solid #191919;
   padding: 18px;
 }
 
@@ -535,11 +535,15 @@ body {
 
 /*contact manager */
 .contact-manager {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
   color: #808080;
   padding-top: 30px;
   padding-left: 20px;
   font-weight: lighter;
-  text-align: left;
 }
 
 .contact-manager h2 {
@@ -551,19 +555,30 @@ body {
 .manager {
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-.manager img {
+.manager .status-online {
+  width: 12px;
+  height: 12px;
+  background: #04AE00;
   border-radius: 50%;
+  position: absolute;
+  right: 80px;
+  top: 10px;
+}
+
+.manager .avatar img {
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
 .manager h3 {
-  font-size: 13px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  font-size: 14px;
   color: #56819F;
   font-weight: lighter;
   padding-top: 25px;
+  padding-left: 20px;
 }
 
 /* header*/
@@ -580,7 +595,7 @@ header {
   background-color: #fff;
   top: 0;
   bottom: 0;
-  height: 90px;
+  height: 70px;
   width: 100%;
   padding: 0;
   border-bottom: 1px solid #d2d0d0;
@@ -597,14 +612,23 @@ header ul {
 header ul li {
   display: -ms-flexbox;
   display: flex;
+  height: 70px;
   border-left: solid 2px #e3e3e3;
-  width: auto;
+}
+
+header ul li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 header ul li .wallet {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 20px 16px 22px 18px;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 30px;
   color: #9c9c9c;
 }
 
@@ -639,12 +663,16 @@ header ul li .notif {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 20px;
-  height: 17px;
+  padding: 30px;
   color: #9c9c9c;
-  padding: 30px 25px 30px 25px;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+header ul li .notif:hover {
+  color: #F58220;
 }
 
 header ul li .notif .notification {
@@ -653,13 +681,15 @@ header ul li .notif .notification {
   background-color: #f58220;
   position: absolute;
   border-radius: 50%;
-  top: 0;
-  right: 0;
+  top: 28px;
+  right: 27px;
 }
 
 header ul li .login {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 25px 30px 21px 15px;
   width: 17px;
   height: 17px;
@@ -681,7 +711,7 @@ header ul li .name {
 }
 
 header ul li .name:hover {
-  color: blue;
+  color: #adb3bc;
 }
 
 header ul li .logout {
@@ -693,6 +723,8 @@ header ul li .logout {
   padding: 31px 30px 25px 30px;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 header ul li .logout:hover {
@@ -709,7 +741,7 @@ header ul li a {
   max-width: 100%;
   height: 100%;
   background-color: #fff;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: 270px;
   margin-right: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -732,13 +764,15 @@ header ul li a {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  padding-top: 40px;
-  border: 0;
+  border: none;
   border-bottom: solid 2px #e3e3e3;
-  padding-bottom: 40px;
+  height: 50px;
+  background: none;
+  padding: 30px;
 }
 
 .container .input .input-one {
+  border: none;
   border: solid 2px #e3e3e3;
 }
 
@@ -749,7 +783,7 @@ header ul li a {
 .container .input .input-second .icon-calendar {
   color: #808080;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .container .input button {

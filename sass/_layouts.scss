@@ -155,15 +155,14 @@ body {
     overflow: hidden;
     top: 0;
     z-index: 999;
-    ;
 
-    img {
-        padding: 20px;
-        text-align: center;
+    .main-logo {
+        margin: 0;
+        padding: 30px;
+
     }
 
     ul {
-        padding: 10px;
         margin: 0;
 
         li {
@@ -181,6 +180,7 @@ body {
                 text-decoration: none;
                 display: block;
                 font-size: $sidebar-font-size;
+                border-left: 5px solid $sidebar-color;
                 padding: 18px;
 
                 &:hover {
@@ -201,11 +201,13 @@ body {
 /*contact manager */
 
 .contact-manager {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     color: $main-font-color;
     padding-top: 30px;
     padding-left: 20px;
     font-weight: lighter;
-    text-align: left;
 
     h2 {
         font-size: 17px;
@@ -217,17 +219,33 @@ body {
 
 .manager {
     display: flex;
+    position: relative;
 
-    img {
+    .status-online {
+        width: 12px;
+        height: 12px;
+        background: #04AE00;
         border-radius: 50%;
+        position: absolute;
+        right: 80px;
+        top: 10px;
+    }
+
+    .avatar {
+
+        img {
+            border-radius: 50%;
+            margin-top: 10px;
+        }
     }
 
     h3 {
-        font-size: 13px;
-        justify-content: space-between;
+
+        font-size: 14px;
         color: $turquise-color;
         font-weight: lighter;
         padding-top: 25px;
+        padding-left: 20px;
     }
 }
 
@@ -235,7 +253,6 @@ body {
 
 header {
     position: fixed;
-
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
@@ -244,7 +261,7 @@ header {
     background-color: #fff;
     top: 0;
     bottom: 0;
-    height: 90px;
+    height: 70px;
     width: 100%;
     padding: 0;
     border-bottom: 1px solid #d2d0d0;
@@ -256,12 +273,19 @@ header {
 
         li {
             display: flex;
+            height: 70px;
             border-left: $border-main;
-            width: auto;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+
 
             .wallet {
                 display: inline-flex;
-                padding: 20px 16px 22px 18px;
+                align-items: center;
+                padding: 30px;
                 color: $header-main-color;
 
                 &:hover {
@@ -294,11 +318,14 @@ header {
             .notif {
                 display: flex;
                 position: relative;
-                width: 20px;
-                height: 17px;
+                padding: 30px;
                 color: $header-main-color;
-                padding: 30px 25px 30px 25px;
+                align-items: center;
                 justify-content: center;
+
+                &:hover {
+                    color: $orange-color;
+                }
 
                 .notification {
                     width: 9px;
@@ -306,13 +333,14 @@ header {
                     background-color: #f58220;
                     position: absolute;
                     border-radius: 50%;
-                    top: 0;
-                    right: 0;
+                    top: 28px;
+                    right: 27px;
                 }
             }
 
             .login {
-                display: inline-flex;
+                display: flex;
+                align-items: center;
                 padding: 25px 30px 21px 15px;
                 width: 17px;
                 height: 17px;
@@ -332,7 +360,7 @@ header {
                 line-height: 42px;
 
                 &:hover {
-                    color: blue;
+                    color: #adb3bc;
                 }
             }
 
@@ -343,6 +371,7 @@ header {
                 color: $header-main-color;
                 padding: 31px 30px 25px 30px;
                 justify-content: center;
+                align-items: center;
 
                 &:hover {
                     color: $orange-color;
@@ -363,7 +392,7 @@ header {
     max-width: 100%;
     height: 100%;
     background-color: #fff;
-    margin-top: 110px;
+    margin-top: 90px;
     margin-left: 270px;
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -383,13 +412,14 @@ header {
     .input {
         display: flex;
         justify-content: center;
-        padding-top: 40px;
-        border: 0;
+        border: none;
         border-bottom: $border-main;
-        padding-bottom: 40px;
+        height: 50px;
+        background: none;
+        padding: 30px;
 
         .input-one {
-
+            border: none;
             border: $border-main;
         }
 
@@ -399,7 +429,7 @@ header {
             .icon-calendar {
                 color: $main-font-color;
                 padding: 20px;
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
 
