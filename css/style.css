@@ -491,7 +491,7 @@ body {
   background-color: #191919;
   overflow: hidden;
   top: 0;
-  z-index: 1;
+  z-index: 999;
 }
 
 .sidebar img {
@@ -568,16 +568,19 @@ body {
 
 /* header*/
 header {
+  position: fixed;
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  z-index: 999;
+  -ms-flex-align: center;
+      align-items: center;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   bottom: 0;
-  height: 80px;
+  height: 90px;
   width: 100%;
   padding: 0;
   border-bottom: 1px solid #d2d0d0;
@@ -706,7 +709,7 @@ header ul li a {
   max-width: 100%;
   height: 100%;
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 110px;
   margin-left: 270px;
   margin-right: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
