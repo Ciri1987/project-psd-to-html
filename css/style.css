@@ -535,10 +535,8 @@ body {
 
 /*contact manager */
 .contact-manager {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   color: #808080;
   padding-top: 30px;
@@ -553,7 +551,6 @@ body {
 }
 
 .manager {
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -584,13 +581,10 @@ body {
 /* header*/
 header {
   position: fixed;
-  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   z-index: 1;
   background-color: #fff;
   top: 0;
@@ -602,32 +596,25 @@ header {
 }
 
 header ul {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   list-style-type: none;
 }
 
 header ul li {
-  display: -ms-flexbox;
   display: flex;
   height: 70px;
   border-left: solid 2px #e3e3e3;
 }
 
 header ul li a {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 header ul li .wallet {
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: 30px;
   color: #9c9c9c;
 }
@@ -637,7 +624,6 @@ header ul li .wallet:hover {
 }
 
 header ul li .sum {
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -649,7 +635,6 @@ header ul li .sum h2 {
 }
 
 header ul li .arrow {
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 30px 16px 26px 20px;
   color: #9c9c9c;
@@ -660,15 +645,12 @@ header ul li .arrow:hover {
 }
 
 header ul li .notif {
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding: 30px;
   color: #9c9c9c;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 header ul li .notif:hover {
@@ -686,10 +668,8 @@ header ul li .notif .notification {
 }
 
 header ul li .login {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: 25px 30px 21px 15px;
   width: 17px;
   height: 17px;
@@ -701,7 +681,6 @@ header ul li .login:hover {
 }
 
 header ul li .name {
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 25px 20px 25px 0;
   color: #56819F;
@@ -715,16 +694,13 @@ header ul li .name:hover {
 }
 
 header ul li .logout {
-  display: -ms-flexbox;
   display: flex;
   width: 19px;
   height: 15px;
   color: #9c9c9c;
   padding: 31px 30px 25px 30px;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 header ul li .logout:hover {
@@ -762,22 +738,17 @@ header ul li a {
 }
 
 .container .input {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   border-bottom: solid 2px #e3e3e3;
   height: 120px;
   padding: 30px;
 }
 
 .container .input .calendar {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   background: none;
@@ -794,12 +765,9 @@ header ul li a {
 }
 
 .container .input .calendar .icon-calendar {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #808080;
   padding: 20px;
 }
@@ -810,12 +778,9 @@ header ul li a {
 }
 
 .container .input button {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F58220;
   border-radius: 6px;
   width: 60px;
@@ -839,31 +804,24 @@ header ul li a {
 }
 
 .container .diagram .graphic {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin: 30px 0px 40px 0px;
   max-width: 100%;
 }
 
 .container .statistic {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 30px;
   max-width: 700px;
   margin: 0 auto;
 }
 
 .container .statistic .stats {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   width: 300px;
   height: 40px;
   border-bottom: solid 2px #e3e3e3;
@@ -910,41 +868,56 @@ header ul li a {
 }
 
 .container .links .add-btn {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 
 .container .row-link {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-bottom: solid 2px #e3e3e3;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  border-top: solid 2px #e3e3e3;
   padding: 20px;
-  margin: 0px 250px 0px 250px;
+  height: 70px;
+  width: 700px;
+}
+
+.container .row-link:last-child {
+  border-bottom: solid 2px #e3e3e3;
 }
 
 .container .row-link:hover {
   background-color: #e3e3e3;
+  opacity: 1;
 }
 
-.container .row-link h2 {
-  font-size: 12px;
+.container .row-link .title {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
   color: #808080;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.container .row-link h3 {
-  font-size: 13px;
+.container .row-link .adress {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #56819F;
 }
 
 .container .row-link a {
   text-decoration: none;
-  color: #808080;
+  color: #56819F;
 }
 
 .container .row-link a:hover {
@@ -952,13 +925,22 @@ header ul li a {
 }
 
 .container .row-link .icons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  margin-right: 10px;
+  width: 100px;
+  opacity: 0;
 }
 
 .container .row-link .icons:hover {
   color: #F58220;
+  opacity: 1;
 }
+
+.container .row-link .icons .icon-links {
+  margin-right: 10px;
+}
+
+.container .row-link .icons .icon-trash {
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
