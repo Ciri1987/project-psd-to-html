@@ -430,16 +430,12 @@ header {
 
             .input-one {
 
-                border: 0;
-                border: $border-main;
-
+                border: none;
             }
 
             .input-second {
 
-                border: 0;
-                border: $border-main;
-
+                border: none;
             }
 
             .icon-calendar {
@@ -575,13 +571,26 @@ header {
         height: 70px;
         width: 700px;
 
-        &:last-child {
-            border-bottom: $border-main;
-        }
-
         &:hover {
             background-color: #e3e3e3;
-            opacity: 1;
+
+        }
+
+        .icons {
+            margin-right: 10px;
+            width: 100px;
+
+            .icon-links,
+            .icon-trash {
+                color: white;
+                margin-right: 10px;
+
+                &:hover {
+                    color: $orange-color;
+
+                }
+            }
+
         }
 
         .title {
@@ -591,7 +600,7 @@ header {
             height: 50px;
             color: $main-font-color;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 16px;
 
         }
 
@@ -604,6 +613,7 @@ header {
             margin-right: 15px;
             font-size: 14px;
             color: $turquise-color;
+
         }
 
         a {
@@ -616,24 +626,6 @@ header {
             }
         }
 
-        .icons {
-            margin-right: 10px;
-            width: 100px;
-            opacity: 0;
 
-            &:hover {
-                color: $orange-color;
-                opacity: 1;
-            }
-
-            .icon-links {
-                margin-right: 10px;
-
-            }
-
-            .icon-trash {
-                margin-right: 10px;
-            }
-        }
     }
 }
