@@ -93,7 +93,7 @@
                             <input type="date" name="calendar">
                         </form>
                     </div>
-                    <div class="input-second">
+                    <div class="input-two">
                         <form>
                             <input type="date" name="calendar">
 
@@ -113,8 +113,12 @@
                 <div class="stats"><span class="title">Turn over</span><span class="number">432</span></div>
             </section>
             <section class="diagram">
-                <h2>Earnings chart</h2>
-                <div class="graphic"><img src="images/graph.png"></div>
+                <span class="chart-title">
+                    <h2>Earnings chart</h2>
+                </span>
+                <div class="chart">
+                    <canvas id="myChart"></canvas></div>
+                <!-- <div class="graphic"><img src="images/graph.png"></div>-->
             </section>
         </section>
 
@@ -213,6 +217,9 @@
             <div class="add-btn"><button>+ add new</button></div>
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

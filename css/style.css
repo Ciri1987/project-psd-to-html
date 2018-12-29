@@ -1,7 +1,6 @@
 /*COLORS*/
 /*FONTS*/
 /*FONTS SIZE*/
-/*BUTTONS*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -787,7 +786,7 @@ header ul li a {
   border: none;
 }
 
-.container .input .calendar .input-second {
+.container .input .calendar .input-two {
   border: none;
 }
 
@@ -829,20 +828,31 @@ header ul li a {
   text-align: center;
 }
 
-.container .diagram h2 {
-  margin: 50px 0px 40px 300px;
+.container .diagram {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+}
+
+.container .diagram .chart-title {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
+}
+
+.container .diagram .chart-title h2 {
   color: #a6a6a6;
   font-size: 16px;
   font-weight: 700;
 }
 
-.container .diagram .graphic {
+.container .diagram .chart {
+  width: 900px;
+  height: 700px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 30px 0px 40px 0px;
-  max-width: 100%;
 }
 
 .container .statistic {
