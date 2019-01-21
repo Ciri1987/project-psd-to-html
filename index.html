@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <script src="main.js"></script>
+
 </head>
 
 <body>
@@ -54,7 +54,9 @@
     <!--sidebar -->
     <nav class="sidebar">
         <div class="main-logo"><img src="images/logo.png" alt="logo"></div>
-
+        <div id="hamburger">
+            <label for="toggle">☰</label>
+        </div>
         <ul>
             <li><a href="index.html"><span class="icon-general"></span>General</a></li>
             <li><a href="#"><span class="icon-details"></span>Details</a></li>
@@ -113,13 +115,14 @@
                 <div class="stats"><span class="title">Turn over</span><span class="number">432</span></div>
             </section>
             <section class="diagram">
-                <span class="chart-title">
-                    <h2>Earnings chart</h2>
-                </span>
-                <div class="chart">
-                    <canvas id="myChart"></canvas></div>
+
+                <h2>Earnings chart</h2>
+
+
                 <!-- <div class="graphic"><img src="images/graph.png"></div>-->
             </section>
+            <div class="chart">
+                <canvas id="myChart"></canvas></div>
         </section>
 
         <!-- links -->
