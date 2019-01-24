@@ -850,6 +850,13 @@ header ul li a {
   color: #F58220;
 }
 
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 50vh;
+  width: 60vw;
+}
+
 @media (max-width: 992px) {
   header {
     display: none;
