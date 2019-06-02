@@ -2,7 +2,7 @@
 
 Simple landing page, one of my first ones. Created from psd file.
 
-Demo [here](https://ciri1987.github.io/project-1/)
+Demo [here]( https://ciri1987.github.io/project-psd-to-html/)
 
 ## Scripts
   - If you want to work with this project locally, download this repository and run `npm install`
